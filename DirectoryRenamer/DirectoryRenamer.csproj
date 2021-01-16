@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Orange233</Authors>
+    <Company>Bisitsoft</Company>
+    <Description>Offical website: https://www.ourorangenet.com</Description>
+    <Copyright>Copyright © 2020 Bisitsoft</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program.Debug.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Program.Debug.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OurOpenSource_HelpViewer\OurOpenSource.TextUnit.HelpViewer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Help.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="help.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

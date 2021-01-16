@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>OurOpenSource</RootNamespace>
+    <Authors>Orange233</Authors>
+    <Company>Bisitsoft</Company>
+    <Product>OurOpenSource.HelpViewer</Product>
+    <PackageId>OurOpenSource.HelpViewer</PackageId>
+    <Copyright>Copyright © 2020 Bisitsoft</Copyright>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Description>Offical website: https://www.ourorangenet.com</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="TextUnit\ConsolePrinter.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="TextUnit\ConsolePrinter.cs" />
+  </ItemGroup>
+
+</Project>
